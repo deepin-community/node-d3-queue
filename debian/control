@@ -1,0 +1,38 @@
+Source: node-d3-queue
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , nodejs
+ , dh-sequence-nodejs
+ , node-tape
+ , rollup
+ , node-package-preamble (>= 0.1.0-2~)
+ , uglifyjs.terser
+Standards-Version: 4.5.1
+Homepage: https://d3js.org/d3-queue/
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-queue.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-d3-queue
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-d3-queue
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: Evaluate asynchronous tasks with configurable concurrency
+ A queue evaluates zero or more deferred asynchronous tasks with configurable
+ concurrency: you control how many tasks run at the same time. When all the
+ tasks complete, or an error occurs, the queue passes the results to your await
+ callback.
+ .
+ This library is similar to Async.js’s parallel (when *concurrency* is infinite)
+ , series (when *concurrency* is 1), and queue, but features a much smaller
+ footprint: as of release 2, d3-queue is about 700 bytes gzipped, compared to
+ 4,300 for Async.
+ .
+ Node.js is an event-based server-side JavaScript engine.

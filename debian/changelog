@@ -1,0 +1,94 @@
+node-d3-queue (3.0.7-11) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-d3-queue: Add Multi-Arch: foreign.
+  * Trim trailing whitespace.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * Remove unsupported uglifyjs option --preamble (Closes: #978250)
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 27 Dec 2020 11:54:06 +0100
+
+node-d3-queue (3.0.7-10) unstable; urgency=medium
+
+  * Tighten build dependency on node-package-preamble (for reproducible
+    builds)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 01 Sep 2019 07:52:00 +0000
+
+node-d3-queue (3.0.7-9) unstable; urgency=medium
+
+  * Switch to rollup from webpack (as upstream uses rollup and we used
+    webpack only because rollup was not available in main)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 24 Aug 2019 18:01:07 +0000
+
+node-d3-queue (3.0.7-8) unstable; urgency=medium
+
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 05 Aug 2019 05:45:14 +0000
+
+node-d3-queue (3.0.7-7) experimental; urgency=medium
+
+  * Build with webpack 4
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 02 Aug 2019 15:47:47 +0000
+
+node-d3-queue (3.0.7-6) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 Jul 2019 16:55:06 +0530
+
+node-d3-queue (3.0.7-5) experimental; urgency=medium
+
+  [ Xavier Guimard ]
+  * Add test required files in debian/tests/pkg-js/files
+  * Update links to https
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 23 Jun 2019 22:03:41 +0530
+
+node-d3-queue (3.0.7-4) experimental; urgency=medium
+
+  * Team Upload
+  * Install ES module (src directory)
+  * Switch to pkg-js-tools for tests
+  * Fix VCS URLs
+  * Upgrade debhelper version to 11
+  * Add uptream/metadata file
+
+ -- Nilesh <npatra974@gmail.com>  Sat, 22 Jun 2019 07:56:31 -0700
+
+node-d3-queue (3.0.7-3) unstable; urgency=medium
+
+  * Use webpack to build umd module like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 05 Jan 2018 23:39:47 +0530
+
+node-d3-queue (3.0.7-2) unstable; urgency=medium
+
+  * Use babel to transpile and move to main (Closes: #877214)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 01 Oct 2017 16:35:51 +0530
+
+node-d3-queue (3.0.7-1) unstable; urgency=low
+
+  * Initial release (Closes: #874554)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 07 Sep 2017 16:05:31 +0530
