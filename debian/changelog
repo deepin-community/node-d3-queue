@@ -1,3 +1,26 @@
+node-d3-queue (3.0.7-13) unstable; urgency=medium
+
+  * Team upload
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.1
+  * Fix filenamemangle
+  * Drop dependency to nodejs
+
+ -- Paul Gevers <elbrus@debian.org>  Sun, 03 Jul 2022 22:09:13 +0200
+
+node-d3-queue (3.0.7-12) unstable; urgency=medium
+
+  * team upload
+
+  [ Yadd ]
+  * Fix GitHub tags regex
+
+  [ Jonas Smedegaard ]
+  * use and build-depend on terser (not uglifyjs.terser)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 02 Dec 2021 20:08:39 +0100
+
 node-d3-queue (3.0.7-11) unstable; urgency=medium
 
   * Team upload

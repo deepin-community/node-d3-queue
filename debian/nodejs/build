@@ -1,2 +1,2 @@
 rollup --banner "$(preamble)" -f umd -n d3 -o build/d3-queue.js -- index.js
-uglifyjs.terser build/d3-queue.js -c -m -o build/d3-queue.min.js
+terser build/d3-queue.js -c -m -o build/d3-queue.min.js
